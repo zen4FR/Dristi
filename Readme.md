@@ -27,28 +27,44 @@ DRISTI helps visually impaired users understand their surroundings by converting
 ---
 
 ## 📁 Repository Structure
-dristi/
+dristi
+│
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
-├── src/
-│ ├── main.py
-│ ├── detection/yolo_detector.py
-│ ├── depth/depth_estimator.py
-│ ├── captioning/caption_model.py
-│ ├── fusion/fuse.py
-│ ├── tts/speak.py
-│ └── utils/image_utils.py
-├── models/ # (ignored in git) pretrained weights
-├── samples/
-│ ├── input/
-│ └── output/
-├── docs/
-│ └── architecture.md
-└── notebooks/
+│
+├── src
+│   ├── main.py
+│   │
+│   ├── detection
+│   │   └── yolo_detector.py
+│   │
+│   ├── depth
+│   │   └── depth_estimator.py
+│   │
+│   ├── captioning
+│       └── caption_model.py
+│
+│   ├── fusion
+│   │   └── fuse.py
+│   │
+│   ├── tts
+│   │   └── speak.py
+│   │
+│   └── utils
+│       └── image_utils.py
+│
+├── models                (pretrained weights, ignored in git)
+│
+├── samples
+│   ├── input
+│   └── output
+│
+├── docs
+│   └── architecture.md
+│
+└── notebooks
 
-
----
 
 ## ⚙️ Quick Setup
 
